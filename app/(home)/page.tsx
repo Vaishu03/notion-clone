@@ -55,7 +55,27 @@ const HomePage = () => {
             alt="sample"
             />
        </div>
-       {/* <Carousel2 /> */}
+       <div className="max-w-5xl space-y-3 pt-20">
+            <h2 className="text-3xl sm:text-5xl md:text-4xl font-semibold">
+            Join a global movement. <br /> Unleash your creativity.
+            </h2>
+            <p className="justify-center space-y-0">
+            Our vibrant community produces content, teaches courses,
+            and leads events all over <br />the world.
+            </p>
+            <a className="justify-center text-blue-600 flex pt-2">
+              Learn more
+              <ArrowRight className="h-6 w-4 ml-1"/>
+            </a>
+            <Image
+            src="/images/avatars.webp"
+            width="900"
+            height="400"
+            alt="avatars"
+            />
+        </div>
+        
+       <Carousel2 />
        <Endless />
        <GetStarted />
        <hr />

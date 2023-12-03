@@ -35,7 +35,6 @@ export const Carousel2 = () => {
 
 
     return(
-        <div className="">
         <div className="max-w-[980px] h-[560px] w-full m-auto relative group ">
         <div style={{backgroundImage: `url(${slides[currentIdx].url})`}} className="w-full h-full rounded-2xl bg-center bg-cover duration-500"></div>
         {/* left arrow */}
@@ -49,6 +48,6 @@ export const Carousel2 = () => {
           <ChevronRight onClick={nextSlide} size={30}/>
         </div>
       </div>
-      </div>
+     
     )
 }
