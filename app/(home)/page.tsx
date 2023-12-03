@@ -10,6 +10,10 @@ import { Button } from "@/components/ui/button";
 import { GetStarted } from "./_components/getstarted";
 import { Endless } from "./_components/endless";
 import { Carousel2 } from "./_components/carousel2";
+import { HiSparkles } from "react-icons/hi";
+import { IoBookSharp } from "react-icons/io5";
+import { GoGoal } from "react-icons/go";
+import { SiGoogledocs } from "react-icons/si";
 
 
 const HomePage = () => {
