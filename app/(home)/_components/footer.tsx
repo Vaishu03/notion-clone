@@ -32,7 +32,7 @@ export const Footer = () => {
             <p className="flex justify-start">Projects</p>
             <p className="flex justify-start">Docs</p>
             <p className="flex justify-start">Notion AI</p>
-            <p className="flex justify-start">What's new</p>
+            <p className="flex justify-start">Whats new</p>
 
             <p className="font-semibold flex justify-start pt-10">Solutions</p>
             <p className="flex justify-start">Enterprise</p>
