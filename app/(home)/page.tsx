@@ -2,7 +2,6 @@
 import { ArrowRight } from "lucide-react";
 import { Buddies } from "./_components/buddies";
 import { Carousel } from "./_components/carousel";
-import { CardList } from "./_components/data";
 import { Heading } from "./_components/heading";
 import { Logos } from "./_components/logos";
 import Image from "next/image";
@@ -22,13 +21,26 @@ const HomePage = () => {
         <Buddies />
         <div className="container max-w-[1130px] mx-auto py-0 px-20">
           <div className="grid lg:grid-cols-4 gap-6">
-            {CardList.map(card => (
+           <div className="rounded-2xl border hover:border-slate-300 items-center bg-gray-200 px-2 py-2 w-41 hover:bg-white">
+                
+                <h3 className="font-bold inline-flex items-center"><span className="h-3 w-2 pr-5"><HiSparkles /></span>AI</h3><br />
+                <p>Ask literally anything. Notion will answer.</p>
+              </div> 
               <div className="rounded-2xl border hover:border-slate-300 items-center bg-gray-200 px-2 py-2 w-41 hover:bg-white">
                 
-                <h3 className="font-bold inline-flex items-center"><span className="h-3 w-2 pr-5">{card.img}</span>{card.title}</h3><br />
-                <p>{card.text}</p>
-              </div> 
-            ))}
+                <h3 className="font-bold inline-flex items-center"><span className="h-3 w-2 pr-5"><IoBookSharp /></span>Wikis</h3><br />
+                <p>Centralize your knowledge. No more hunting for answers.</p>
+              </div>
+              <div className="rounded-2xl border hover:border-slate-300 items-center bg-gray-200 px-2 py-2 w-41 hover:bg-white">
+                
+                <h3 className="font-bold inline-flex items-center"><span className="h-3 w-2 pr-5"><GoGoal /></span>Projects</h3><br />
+                <p>Manage complex projects without the chaos.</p>
+              </div>
+              <div className="rounded-2xl border hover:border-slate-300 items-center bg-gray-200 px-2 py-2 w-41 hover:bg-white">
+                
+                <h3 className="font-bold inline-flex items-center"><span className="h-3 w-2 pr-5"><SiGoogledocs /></span>Docs</h3><br />
+                <p>Simple, powerful, beautiful. Next-gen notes & docs.</p>
+              </div>
           </div>
         </div>
         <Carousel />
